@@ -1,7 +1,7 @@
 $(function() {
     
     
-    
+    $('aside').relativelySticky();
     
     
 });

@@ -50,9 +50,11 @@ img,video,audio,embed,object,input,iframe{max-width:100%}
 .chromeframe p{width:auto;max-width:1410px;float:none;display:block;margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px;padding:15px 0;margin-top:0;margin-bottom:0;text-align:center;margin-bottom:0;}
 .chromeframe p a{color:#3a95fb}
 *{background:rgba(0,0,0,0.05) url("../img/edit_mixin.png")}
+* * * * *{background:none}
+html{height:2000px}
 body{padding:30px 0}
-header{width:auto;max-width:800px;float:none;display:block;margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}
-section{width:auto;max-width:800px;float:none;display:block;margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px;height:2000px}
+header{width:auto;max-width:800px;float:none;display:block;margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px;margin-bottom:20px}
+section{width:auto;max-width:800px;float:none;display:block;margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px;height:400px}
 aside{float:left;width:31.33333333333333%;margin-left:0%;margin-right:3%;}
 aside:last-child{margin-right:0%}
 article{float:left;width:65.66666666666666%;margin-left:0%;margin-right:3%;}

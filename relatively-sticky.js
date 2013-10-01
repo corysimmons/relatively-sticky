@@ -1,40 +1,64 @@
-$(function() {
+// relatively-sticky.js by Cory Simmons -> @ccccory
+(function($) {
+    
+    $.fn.relativelySticky = function(options) {
         
-    // Jeet's "Relatively Sticky" plugin
-    if($('[jeet-fixed]').attr('jeet-fixed')) {
-        var setPosition = function() {
-            $('[jeet-fixed]').css({
-                position: 'relative',
-                top: $(window).scrollTop() + parseInt($('[jeet-fixed]').attr('jeet-fixed'), 10)
-            });
-        };
-        $(window).scroll(function() {
-            if($(window).scrollTop() >= parseInt($('[jeet-pickup]').attr('jeet-pickup'), 10)) {
-                setPosition();
-                $(window).scroll(function() {
-                    var jS;
-                    if($('[jeet-speed]').attr('jeet-speed')) {
-                        jS = $('[jeet-speed]').attr('jeet-speed');
-                    } else {
-                        jS = '200ms';
-                    }
-                    setInterval(function() {
-                        if($(window).scrollTop() >= parseInt($('[jeet-pickup]').attr('jeet-pickup'), 10)) {
-                            $('[jeet-fixed]').css({
-                                position: 'relative',
-                                top: $(window).scrollTop() + parseInt($('[jeet-fixed]').attr('jeet-fixed'), 10),
-                                transition: 'all '+ jS +' ease'
-                            });
-                        } else {
-                            $('[jeet-fixed]').css({
-                                position: 'relative',
-                                top: 'auto'
-                            });
-                        }
-                    }, 200);
-                });
-            }
+        var t = $(this),
+            settings = $.extend({
+                speed: 0,
+                offset: 0,
+                pickup: 'auto',
+                cssEasing: 'ease'
+            }, options),
+            s = settings,
+            w;
+        
+        t.css({
+            position: 'relative',
+            transition: 'all '+ s.speed +'ms '+ s.cssEasing
         });
-    }
-
-});
+        
+        if(s.pickup === 'auto') {
+            $(window).scroll(function() {
+                w = $(window).scrollTop();
+                if(w >= t.parent().offset().top) {
+                    t.css({
+                        top: w - t.parent().offset().top + s.offset
+                    });
+                } else {
+                    t.css('top', 'auto');
+                }
+            });
+        } else if(s.pickup === 0 ) {
+            if(s.offset > 0) {
+                t.css('top', s.offset);
+            }
+            $(window).scroll(function() {
+                w = $(window).scrollTop();
+                if(w >= t.parent().offset().top + s.pickup) {
+                    t.css('top', w - t.parent().offset().top + s.offset);
+                } else if(w < t.parent().offset().top + s.pickup) {
+                    t.css('top', s.offset);
+                } else {
+                    t.css('top', 'auto');
+                }
+            });
+        } else {
+            if(s.offset > 0) {
+                t.css('top', s.offset);
+            }
+            $(window).scroll(function() {
+                w = $(window).scrollTop();
+                if(w >= s.pickup) {
+                    t.css('top', w - t.parent().offset().top + s.offset);
+                } else if(w < t.parent().offset().top + s.pickup) {
+                    t.css('top', s.offset);
+                } else {
+                    t.css('top', 'auto');
+                }
+            });
+        }
+        
+    };
+    
+}(jQuery));
