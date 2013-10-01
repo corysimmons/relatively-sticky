@@ -1,0 +1,61 @@
+@import 'plugins.css';
+html{color:#555;font-size:14.139999999999999px;font-weight:200;line-height:21.209999999999997px;font-family:"Helvetica Neue",HelveticaNeue,Helvetica,Arial,sans-serif}
+a{color:#00a6fc;}
+a:hover{color:#0095e3}
+h1,h2,h3,h4,h5,h6,strong,b,dt{color:#222;font-weight:bold}
+h1{font-size:39.592px;line-height:42.419999999999995px;margin-bottom:14.139999999999999px}
+h2{font-size:35.35px;line-height:39.592px;margin-bottom:11.312px}
+h3{font-size:31.107999999999997px;line-height:36.763999999999996px;margin-bottom:8.484px}
+h4{font-size:26.866px;line-height:33.936px;margin-bottom:5.656px}
+h5{font-size:22.624px;line-height:31.107999999999997px;margin-bottom:2.828px}
+h6{font-size:18.381999999999998px;line-height:28.279999999999998px;margin-bottom:0}
+p,ul,ol,pre,dl{margin-bottom:14.139999999999999px}
+ul,ol{padding-left:1.4em}
+li,dd{margin-bottom:7.069999999999999px}
+pre{font-size:11.312px}
+header * + p{color:#bbb}
+header h1 + p,header h1 + p + p,header h1 + p + p + p{margin-top:-7.069999999999999px}
+header h2 + p,header h2 + p + p,header h2 + p + p + p{margin-top:-5.656px}
+header h3 + p,header h3 + p + p,header h3 + p + p + p{margin-top:-4.242px}
+header h4 + p,header h4 + p + p,header h4 + p + p + p{margin-top:-2.828px}
+header h5 + p,header h5 + p + p,header h5 + p + p + p{margin-top:-1.414px}
+header h6 + p,header h6 + p + p,header h6 + p + p + p{margin-top:-1.414px}
+@media all and (max-width: 705px) {
+html{font-size:12.5px;line-height:18.75px}
+h1{font-size:35px;line-height:37.5px;margin-bottom:12.5px}
+h2{font-size:31.25px;line-height:35px;margin-bottom:10px}
+h3{font-size:27.5px;line-height:32.5px;margin-bottom:7.5px}
+h4{font-size:23.75px;line-height:30px;margin-bottom:5px}
+h5{font-size:20px;line-height:27.5px;margin-bottom:2.5px}
+h6{font-size:16.25px;line-height:25px;margin-bottom:0}
+p,ul,ol,pre,dl{margin-bottom:12.5px}
+li,dd{margin-bottom:6.25px}
+pre{font-size:10px}
+header * + p{color:#bbb}
+header h1 + p,header h1 + p + p,header h1 + p + p + p{margin-top:-6.25px}
+header h2 + p,header h2 + p + p,header h2 + p + p + p{margin-top:-5px}
+header h3 + p,header h3 + p + p,header h3 + p + p + p{margin-top:-3.75px}
+header h4 + p,header h4 + p + p,header h4 + p + p + p{margin-top:-2.5px}
+header h5 + p,header h5 + p + p,header h5 + p + p + p{margin-top:-1.25px}
+header h6 + p,header h6 + p + p,header h6 + p + p + p{margin-top:-1.25px}
+}
+body,.cf,.chromeframe p,header,section,aside,article{zoom:1;}
+body:before,.cf:before,.chromeframe p:before,header:before,section:before,aside:before,article:before,body:after,.cf:after,.chromeframe p:after,header:after,section:after,aside:after,article:after{content:"";display:table}
+body:after,.cf:after,.chromeframe p:after,header:after,section:after,aside:after,article:after{clear:both}
+*,*:before,*:after,*::before,*::after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-o-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;*behavior:url("js/vendor/boxsizing.htc");margin:0;padding:0}
+html{overflow-y:scroll;overflow-x:hidden}
+body{width:100%}
+img,video,audio,embed,object,input,iframe{max-width:100%}
+.chromeframe{width:100%;background:#fff;background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(1, #eee));background:-webkit-linear-gradient(top, #fff 0%, #eee 100%);background:-moz-linear-gradient(top, #fff 0%, #eee 100%);background:-o-linear-gradient(top, #fff 0%, #eee 100%);background:-ms-linear-gradient(top, #fff 0%, #eee 100%);background:linear-gradient(top, #fff 0%, #eee 100%);border-bottom:1px solid #ddd;-webkit-box-shadow:inset 0 -1px 0 #fff;-moz-box-shadow:inset 0 -1px 0 #fff;-o-box-shadow:inset 0 -1px 0 #fff;-ms-box-shadow:inset 0 -1px 0 #fff;box-shadow:inset 0 -1px 0 #fff;text-shadow:0 1px 0 #fff;}
+.chromeframe p{width:auto;max-width:1410px;float:none;display:block;margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px;padding:15px 0;margin-top:0;margin-bottom:0;text-align:center;margin-bottom:0;}
+.chromeframe p a{color:#3a95fb}
+*{background:rgba(0,0,0,0.05) url("../img/edit_mixin.png")}
+body{padding:30px 0}
+header{width:auto;max-width:800px;float:none;display:block;margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}
+section{width:auto;max-width:800px;float:none;display:block;margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px;height:2000px}
+aside{float:left;width:31.33333333333333%;margin-left:0%;margin-right:3%;}
+aside:last-child{margin-right:0%}
+article{float:left;width:65.66666666666666%;margin-left:0%;margin-right:3%;}
+article:last-child{margin-right:0%}
+@media all and (max-width: 705px) {
+}
