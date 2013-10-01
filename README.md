@@ -29,6 +29,10 @@ $('aside').relativelySticky({
 });
 ```
 
+### Browser Support
+
+Seamless IE7+ (probably IE6 too), all modern browsers of course
+
 ---
 
 If you like this project be sure to check out my lightweight and completely unique/awesome CSS framework, [Jeet](https://github.com/CorySimmons/jeet/).
