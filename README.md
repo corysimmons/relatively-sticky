@@ -3,6 +3,8 @@ relatively-sticky
 
 A jQuery plugin that will give you that *sticky feeling* without all the headaches involved with `position: fixed`.
 
+##### [DEMO](http://jeetframework.com/demo/relatively-sticky/)
+
 ### Options
 
 - **speed** milliseconds (default: 0)
