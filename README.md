@@ -3,8 +3,6 @@ relatively-sticky
 
 A jQuery plugin that will give you that *sticky feeling* without all the headaches involved with `position: fixed`.
 
-##### [DEMO](http://jeetframework.com/)
-
 ### Options
 
 - **speed** milliseconds (default: 0)
@@ -35,4 +33,4 @@ Seamless IE7+ (probably IE6 too), all modern browsers of course
 
 ---
 
-If you like this project be sure to check out my lightweight and completely unique/awesome CSS framework, [Jeet](https://github.com/mojotech/jeet/).
+If you like this project be sure to check out my lightweight and completely awesome grid framework, [Jeet](https://github.com/mojotech/jeet/).
