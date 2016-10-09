@@ -30,7 +30,3 @@ $('aside').relativelySticky({
 ### Browser Support
 
 Seamless IE7+ (probably IE6 too), all modern browsers of course
-
----
-
-If you like this project be sure to check out my lightweight and completely awesome grid framework, [Jeet](https://github.com/mojotech/jeet/).
